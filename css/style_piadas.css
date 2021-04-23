@@ -1,0 +1,175 @@
+
+/*TAGS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #FF8C00;
+}
+
+header{
+    clear: both;
+    background-color: rgb(88, 0, 88);
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-bottom: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-width: 5px;
+}
+h1{
+    color: #000000;
+    text-align: right;
+}
+
+/*IDS*/
+#menu{
+    float: right;
+    margin: 5px;
+    padding: 20px;
+}
+#logo{
+    float: left;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+#menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+#menu a:hover{
+    background-color: white;
+    color: rgb(119, 0, 255);
+}
+#menu p{
+    color: white;
+    font-size: 200px;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+/*CLASS*/
+.container{
+    width: 960px;
+    margin:auto;
+}
+
+.portfolio {
+    font-family: 'Rubik', sans-serif;
+    padding: 1.5em;
+    margin-top: 160px;
+}
+
+.portfolio h2 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(163, 218, 255);
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(60vh - 8em - 48px);
+  }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+}
+
+.flip-card {
+    height: 180px;
+    perspective: 1000px;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card-front, 
+.card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(88, 0, 88);
+}
+
+.card-back {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238, 238, 238, 0.090);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+.card-front {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.090);
+    height: 180px;
+    width: 100%;
+}
+.card-front2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.090);
+    height: 180px;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(88, 0, 88);
+}
+.card-front3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.090);
+    height: 180px;
+    width: 360px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(88, 0, 88);
+}
